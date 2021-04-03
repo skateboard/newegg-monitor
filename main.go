@@ -58,7 +58,7 @@ func sendWebhook(product Product, discordWebhook string)  {
 func newMonitor()  {
 	client := &http.Client{}
 
-	discordWebhook := "https://discord.com/api/webhooks/824111086545534977/caui0A9bSHcsK1K5i0SDCAqvj6AlQCrcV7-PWYOe5UFloy8W3ZBYLGzWok2HiXiArf_q"
+	discordWebhook := "web-hook"
 	sku := "N82E16819113567"
 
 	request, requestError := http.NewRequest("GET", 	fmt.Sprintf("https://www.newegg.com/product/api/ProductRealtime?ItemNumber=%s",sku), nil)
